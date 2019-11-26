@@ -6,4 +6,12 @@ module ApplicationHelper
       return false
     end
   end
+
+  def valid_location(location)
+	    if location.latitude == nil || location.longitude == nil
+            return false
+	    else
+			return true	
+	    end
+	end	
 end
